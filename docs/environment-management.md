@@ -10,3 +10,14 @@ The project uses a dedicated Python virtual environment created with Python `ven
 
 ```text
 .venv/
+<!-- conda environment  -->
+healthcare-ai
+Python 3.12
+<!-- installed -->
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
+Jupyter
+ipykernel
