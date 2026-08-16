@@ -9,6 +9,31 @@ The project demonstrates an end-to-end workflow starting from project setup and 
 The system is designed as a practical learning project to demonstrate how healthcare data can be stored, managed, analyzed, and prepared for Artificial Intelligence and Machine Learning applications.
 
 ---
+## API Integration
+
+The project includes a REST API integration module developed using Python's
+`requests` library. The implementation communicates with an external public
+REST API, sends HTTP requests, receives JSON responses, validates responses,
+and extracts selected information from the returned data.
+
+The API client demonstrates the core REST methods:
+
+- GET – retrieve resources
+- POST – create resources
+- PUT – replace resources
+- PATCH – partially update resources
+- DELETE – delete resources
+
+JSONPlaceholder is used as a public testing service, so no real patient or
+personally identifiable healthcare data is transmitted.
+
+The implementation is available in:
+
+`src/api/api_client.py`
+
+Detailed API concepts and implementation notes are documented in:
+
+`docs/api-integration.md`
 
 ## Project Objectives
 
@@ -26,7 +51,10 @@ The system is designed as a practical learning project to demonstrate how health
 - Evaluate model performance using appropriate metrics
 - Practice professional Git and GitHub version-control workflows
 - Maintain project history using branches, commits, merges, and pull requests
-
+- Understand REST API architecture and HTTP request/response workflows
+- Retrieve and process JSON data from external services using Python
+- Extract selected information from API responses
+- Practice API integration using GET, POST, PUT, PATCH, and DELETE methods
 ---
 
 # Technologies Used
@@ -63,7 +91,12 @@ The system is designed as a practical learning project to demonstrate how health
 - GitHub
 
 ---
+## Environment & Dependency Management
 
+- Python `venv`
+- Conda
+- pip
+- requirements.txt
 # Project Architecture
 
 ```text
@@ -78,10 +111,11 @@ Healthcare-AI-System/
 │   ├── verify_database.py
 │   ├── sql_queries.py
 │   │
+│   ├── api/
+│   │   └── api_client.py
 │   ├── eda/
 │   ├── preprocessing/
-│   └── ml/
-│
+│   └── ml/│
 ├── notebooks/
 │
 ├── reports/
